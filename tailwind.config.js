@@ -1,23 +1,17 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      colors: {
-        brand: {
-          light: "#fce4ec",
-          DEFAULT: "#ec407a",
-          dark: "#ad1457",
-        },
+      backgroundImage: {
+        'brick-pattern': `
+          linear-gradient(to right, #eaeaea 1px, transparent 1px),
+          linear-gradient(to bottom, #eaeaea 1px, transparent 1px)
+        `,
       },
-      fontFamily: {
-        sans: ["'Noto Sans JP'", "sans-serif"],
-        'luana': ['"Amatic SC"', 'cursive'],
+      backgroundSize: {
+        'brick': '50px 50px',
       },
     },
+      plugins: [],
   },
-  plugins: [],
 };
