@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa";
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* ロゴ */}
         <div className="flex flex-col items-center text-center">
           <p className="text-xs text-gray-500 tracking-widest mb-1">Hair design</p>
           <h1 className="text-2xl font-luana tracking-widest text-[#333]">
-            LUANA <span>•</span> S <span>•</span> MIRUTO
+            LUANA <span className="mx-1">•</span> S <span className="mx-1">•</span> MIRUTO
           </h1>
         </div>
-
 
         {/* ナビゲーションと連絡エリア */}
         <div className="flex items-center space-x-6">

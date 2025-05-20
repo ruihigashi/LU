@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SliderDots({ images, current, scrollToSlide }) {
   return (
-    <div className="w-full flex justify-center py-6 bg-white">
+    <div className=" w-full flex justify-center py-6 bg-white">
       <div className="flex space-x-3">
         {images.map((_, index) => (
           <button

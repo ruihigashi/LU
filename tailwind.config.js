@@ -11,7 +11,14 @@ module.exports = {
       backgroundSize: {
         'brick': '50px 50px',
       },
+      fontFamily: {
+        'luana': ['"Amatic SC"', 'cursive'],
+        great: ['"Great Vibes"', 'cursive'],
+        quicksand: ['"Quicksand"', 'sans-serif'],
+        dancing: ['"Dancing Script"', 'cursive'],
+
+      },
     },
-      plugins: [],
+    plugins: [],
   },
 };

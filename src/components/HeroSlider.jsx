@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import salon from "../assets/Images/salon.jpg"
 
 export default function HeroSlider({ images, current, setCurrent, sliderRef, scrollToSlide }) {
     useEffect(() => {
@@ -9,7 +10,8 @@ export default function HeroSlider({ images, current, setCurrent, sliderRef, scr
     }, [current]);
 
     return (
-        <section className="w-screen relative overflow-hidden">
+        <section className="w-screen h-screen relative overflow-hidden -mt-[80px]">
+
             <div
                 ref={sliderRef}
                 className="flex w-full transition-all duration-500 ease-in-out overflow-hidden scroll-smooth snap-x snap-mandatory"
@@ -17,9 +19,9 @@ export default function HeroSlider({ images, current, setCurrent, sliderRef, scr
                 {images.map((src, index) => (
                     <img
                         key={index}
-                        src={src}
+                        src={salon}
                         alt={`slide-${index}`}
-                        className="w-screen h-[400px] object-cover snap-center flex-shrink-0"
+                        className="w-screen h-screen object-cover snap-center flex-shrink-0"
                     />
                 ))}
             </div>
