@@ -4,8 +4,7 @@ import HeroSlider from "./components/HeroSlider";
 import IntroText from "./components/IntroText";
 import SliderDots from "./components/SliderDots";
 import Footer from "./components/Footer";
-
-const images = ["/slider1.jpg", "/slider2.jpg", "/slider3.jpg"];
+import Guidance from "./components/Guidance";
 
 export default function App() {
   const [current, setCurrent] = useState(0);
@@ -23,20 +22,28 @@ export default function App() {
     <div className="min-h-screen bg-white text-gray-800 font-serif overflow-x-hidden">
       <Header />
       <main className="pt-16">
-                <HeroSlider
-          images={images}
-          current={current}
-          setCurrent={setCurrent}
-          sliderRef={sliderRef}
-          scrollToSlide={scrollToSlide}
-        />
+        <div id="heroslider">
+          <HeroSlider
+            current={current}
+            setCurrent={setCurrent}
+            sliderRef={sliderRef}
+            scrollToSlide={scrollToSlide}
+          />
+        </div>
+
         <SliderDots
-          images={images}
           current={current}
           scrollToSlide={scrollToSlide}
         />
-        <IntroText />
-      <Footer />
+
+        <div id="introtext">
+          <IntroText />
+        </div>
+
+        <div id="guidance">
+          <Guidance />
+        </div>
+        <Footer />
       </main>
     </div>
   );
