@@ -45,9 +45,9 @@ export default function Header() {
 
         <div className="max-w-7xl mx-auto px-8 py-3 flex justify-between items-center">
           {/* ロゴ */}
-          <div onClick={handleClick} className="flex flex-col items-center text-center cursor-pointer">
+          <div onClick={handleClick} className=" flex flex-col items-center text-center cursor-pointer">
             <p className="text-xs text-gray-500 tracking-widest font-great">Hair Salon</p>
-            <h1 className="text-xl font-luana tracking-widest text-gray-700">
+            <h1 className="text-lg font-luana tracking-widest text-gray-700">
               LUANA • S • MIRUTO
             </h1>
           </div>
