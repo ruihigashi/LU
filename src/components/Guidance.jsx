@@ -60,7 +60,7 @@ export default function Guidance() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaInstagram className="text-white text-4xl hover:text-pink-400" />
+                        <FaInstagram className="text-white text-4xl hover:text-blue-600" />
                     </a>
                 </div>
 

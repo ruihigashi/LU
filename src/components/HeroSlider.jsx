@@ -18,7 +18,7 @@ export default function HeroSlider({ current, setCurrent, sliderRef, scrollToSli
   }, [current]);
 
   return (
-    <section className="w-full h-screen relative overflow-hidden -mt-[80px]">
+<section className="w-full aspect-[16/9] sm:aspect-[16/9] md:aspect-[21/9] relative overflow-hidden mt-1">
   <div
     ref={sliderRef}
     className="flex transition-all duration-500 ease-in-out overflow-hidden scroll-smooth snap-x snap-mandatory"
@@ -28,7 +28,7 @@ export default function HeroSlider({ current, setCurrent, sliderRef, scrollToSli
         key={index}
         src={src}
         alt={`slide-${index}`}
-        className="min-w-full h-screen object-cover object-center snap-center flex-shrink-0 max-w-full"
+        className="min-w-full h-full object-cover object-center snap-center flex-shrink-0 max-w-full"
       />
     ))}
   </div>
@@ -49,6 +49,7 @@ export default function HeroSlider({ current, setCurrent, sliderRef, scrollToSli
     &#10095;
   </button>
 </section>
+
 
   );
 }

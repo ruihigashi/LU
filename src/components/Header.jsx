@@ -41,11 +41,9 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"
-          }`}
-      >
-        <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+      <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-300">
+
+        <div className="max-w-7xl mx-auto px-8 py-3 flex justify-between items-center">
           {/* ロゴ */}
           <div onClick={handleClick} className="flex flex-col items-center text-center cursor-pointer">
             <p className="text-xs text-gray-500 tracking-widest font-great">Hair Salon</p>
@@ -59,25 +57,25 @@ export default function Header() {
             <nav className="hidden md:flex space-x-6 items-center">
               {location.pathname === "/" && (
                 <ul className="flex space-x-4 items-center text-sm text-gray-700">
-                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("introtext")}>サロンについて</li>
-                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("menu")}>メニュー</li>
-                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("map")}>マップ</li>
-                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("guidance")}>インフォメーション</li>
+                  <li className="cursor-pointer hover:text-blue-600" onClick={() => scrollToSection("introtext")}>サロンについて</li>
+                  <li className="cursor-pointer hover:text-blue-600" onClick={() => scrollToSection("menu")}>メニュー</li>
+                  <li className="cursor-pointer hover:text-blue-600" onClick={() => scrollToSection("map")}>マップ</li>
+                  <li className="cursor-pointer hover:text-blue-600" onClick={() => scrollToSection("guidance")}>インフォメーション</li>
                 </ul>
               )}
 
               <a
-                href="tel:0927107189"
-                className="flex items-center text-sm text-gray-700 hover:text-pink-500"
+                href="tel:0986668248"
+                className="flex items-center text-sm text-gray-700 hover:text-blue-600"
               >
                 <FaPhone className="mr-1" />
-                090-2585-6220
+                0986-66-8248
               </a>
               <a
                 href="https://www.instagram.com/your_instagram_id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black text-xl hover:text-pink-500 transition"
+                className="text-black text-xl hover:text-blue-600 transition"
               >
                 <FaInstagram />
               </a>

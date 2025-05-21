@@ -24,7 +24,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      
+
       <Header />
       <Routes>
         {/* トップページ */}
@@ -64,6 +64,7 @@ export default function App() {
           <>
           <MenuPage />
           <Guidance />
+          <Footer />
           </>
           } />
       </Routes>

@@ -104,15 +104,21 @@ export default function MenuSection() {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 pb-10 px-6">
                                 {section.items.map((item, idx) => (
-                                    <div key={idx} className="space-y-4 mt-2">
-                                        <div className="flex justify-between gap-6">
-                                            <span className="font-medium whitespace-nowrap text-lg">{item.name}</span>
-                                            <span className="text-gray-700 whitespace-nowrap text-lg">{item.price}</span>
+                                    <div key={idx} className="flex flex-col justify-between min-h-[110px] space-y-2 mt-2">
+                                        <div>
+                                            <div className="flex justify-between gap-6">
+                                                <span className="font-medium whitespace-nowrap font-serifjp">{item.name}</span>
+                                                <span className="text-gray-700 whitespace-nowrap font-serifjp">{item.price}</span>
+                                            </div>
+                                            <p className="text-gray-600 whitespace-pre-line text-xs font-serifjp mt-4">
+                                                {item.desc}
+                                            </p>
                                         </div>
-                                        <p className="text-sm text-gray-600 whitespace-pre-line text-sm">{item.desc}</p>
-                                        <hr className="mt-4 border-gray-400" />
+
+                                        <hr className="border-gray-400 mt-2" />
                                     </div>
                                 ))}
+
                             </div>
                         </div>
                     </div>

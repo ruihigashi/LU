@@ -14,7 +14,7 @@ export default function SliderDots({ current, scrollToSlide }) {
             key={index}
             onClick={() => scrollToSlide(index)}
             className={`w-3 h-3 rounded-full transition ${
-              current === index ? "bg-pink-500" : "bg-gray-300"
+              current === index ? "bg-blue-600" : "bg-gray-300"
             }`}
           ></button>
         ))}

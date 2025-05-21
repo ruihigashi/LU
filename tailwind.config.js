@@ -16,7 +16,8 @@ module.exports = {
         great: ['"Great Vibes"', 'cursive'],
         quicksand: ['"Quicksand"', 'sans-serif'],
         dancing: ['"Dancing Script"', 'cursive'],
-
+        serifjp: ['"Noto Serif JP"', 'serif'],
+        playfair: ['"Playfair Display"', 'serif'],
       },
     },
     plugins: [],
