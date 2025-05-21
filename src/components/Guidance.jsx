@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 export default function Footer() {
     return (
         <section
-            className="bg-[url('/home/rui0421/Luana/src/assets/Images/p0520_l.jpg')] bg-cover bg-center text-white text-sm py-16 px-4"
+            className="bg-[url('Luana/src/assets/Images/p0520_l.jpg')] bg-cover bg-center text-white text-sm py-16 px-4"
             id="guidance"
         >
             <div className="max-w-4xl mx-auto">

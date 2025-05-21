@@ -53,7 +53,7 @@ export default function IntroText() {
         <hr className="my-5 border-t-2 border-blue-900 rounded-full" />
       </div>
 
-      <div className="max-w-3xl mx-auto my-16 p-8 bg-[url('/home/rui0421/Luana/src/assets/Images/menu.jpg')] bg-cover bg-no-repeat bg-center rounded-xl shadow-2xl border border-pink-200 backdrop-blur-sm" data-aos="fade-up" data-aos-duration="1000">
+      <div className="max-w-3xl mx-auto my-16 p-8 bg-[url('Luana/src/assets/Images/menu.jpg')] bg-cover bg-no-repeat bg-center rounded-xl shadow-2xl border border-pink-200 backdrop-blur-sm" data-aos="fade-up" data-aos-duration="1000">
 
         {/* Set menu */}
         <div className="mb-10">
