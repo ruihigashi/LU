@@ -2,6 +2,8 @@ import lineQR from "../assets/Images/line.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import background from "../assets/Images/white.jpg"
+import menu from "../assets/Images/menu.jpg"
 
 export default function IntroText() {
   useEffect(() => {
@@ -10,7 +12,8 @@ export default function IntroText() {
 
   return (
     <section
-      className="py-12 text-center px-4 bg-[url('/rui0421/Luana/src/assets/Images/white.jpg')] bg-repeat bg-center bg-blend-overlay"
+      className="py-12 text-center px-4 bg-repeat bg-center bg-blend-overlay"
+      style={{ backgroundImage: `url(${background})` }}
     >
       <h2 className="text-3xl font-semibold mb-8 font-luana">
         LUANA <span className="mx-1">•</span> S <span className="mx-1">•</span> MIRUTO
@@ -61,7 +64,8 @@ export default function IntroText() {
         {[...Array(3)].map((_, i) => (
           <div
             key={i}
-            className="p-6 bg-[url('/menu.jpg')] bg-cover bg-no-repeat bg-center rounded-xl shadow-2xl border border-pink-200 backdrop-blur-sm"
+            className="p-6 bg-cover bg-no-repeat bg-center rounded-xl shadow-2xl border border-pink-200 backdrop-blur-sm"
+            style={{ backgroundImage: `url(${menu})` }}
           >
             <div className="mb-10">
               <h4 className="text-xl font-bold text-pink-500 border-b border-pink-300 inline-block mb-8">

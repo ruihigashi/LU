@@ -1,11 +1,13 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
+import Guidance from "../assets/Images/Guidance.jpg"
 
-export default function Footer() {
+export default function Guidance() {
     return (
         <section
-            className="bg-[url('../images/p0520_l.jpg')] bg-cover bg-center text-white text-sm py-16 px-4"
+            className="bg-cover bg-center text-white text-sm py-16 px-4"
             id="guidance"
+            style={{ backgroundImage: `url(${Guidance})` }}
         >
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-center text-3xl font-semibold tracking-wide mb-10 font-luana">
