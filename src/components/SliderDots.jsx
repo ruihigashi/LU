@@ -7,13 +7,13 @@ export default function SliderDots({ current, scrollToSlide }) {
   const images = [slide1, slide2, slide3, slide4];
 
   return (
-    <div className="w-full flex justify-center py-6 bg-white">
+    <div className="w-full flex justify-center py-4 bg-white">
       <div className="flex space-x-3">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => scrollToSlide(index)}
-            className={`w-3 h-3 rounded-full transition ${
+            className={`w-1 h-1 rounded-full transition ${
               current === index ? "bg-blue-600" : "bg-gray-300"
             }`}
           ></button>
