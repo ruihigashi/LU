@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { FaPhone, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
+import { useNavigate, useLocation } from "react-router-dom";
+
+
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,21 +30,26 @@ export default function Header() {
     }
   };
 
+  const handleClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // トップページへ遷移
+      navigate("/");
+    }
+  };
+
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-md" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
           {/* ロゴ */}
-          <div
-            className="flex flex-col items-center text-center cursor-pointer"
-            onClick={() => scrollToSection("heroslider")}
-          >
+          <div onClick={handleClick} className="flex flex-col items-center text-center cursor-pointer">
             <p className="text-xs text-gray-500 tracking-widest font-great">Hair Salon</p>
-            <h1 className="text-2xl font-luana tracking-widest text-gray-700">
+            <h1 className="text-xl font-luana tracking-widest text-gray-700">
               LUANA • S • MIRUTO
             </h1>
           </div>
@@ -46,12 +57,15 @@ export default function Header() {
           {/* ナビゲーション + ハンバーガー */}
           <div className="flex items-center space-x-4 te">
             <nav className="hidden md:flex space-x-6 items-center">
-              <ul className="flex space-x-4 items-center text-sm text-gray-700">
-                <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("introtext")}>サロンについて</li>
-                <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("menu")}>メニュー</li>
-                <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("map")}>マップ</li>
-                <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("guidance")}>インフォメーション</li>
-              </ul>
+              {location.pathname === "/" && (
+                <ul className="flex space-x-4 items-center text-sm text-gray-700">
+                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("introtext")}>サロンについて</li>
+                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("menu")}>メニュー</li>
+                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("map")}>マップ</li>
+                  <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("guidance")}>インフォメーション</li>
+                </ul>
+              )}
+
               <a
                 href="tel:0927107189"
                 className="flex items-center text-sm text-gray-700 hover:text-pink-500"
@@ -83,9 +97,8 @@ export default function Header() {
 
       {/* モバイル用ドロワーメニュー（右） */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gradient-to-b from-black to-indigo-900 text-white z-50 transform transition-transform duration-300 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        } shadow-2xl`}
+        className={`fixed top-0 right-0 h-full w-64 bg-gradient-to-b from-black to-indigo-900 text-white z-50 transform transition-transform duration-300 ${menuOpen ? "translate-x-0" : "translate-x-full"
+          } shadow-2xl`}
       >
         <div className="flex justify-between items-center px-4 py-4 border-b border-white/30">
           <span className="text-lg font-semibold tracking-wide">メニュー</span>
@@ -93,11 +106,24 @@ export default function Header() {
             <FaTimes />
           </button>
         </div>
+
         <ul className="flex flex-col p-6 space-y-6 text-base tracking-wide">
-          <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("introtext")}>サロンについて</li>
-          <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("menu")}>メニュー</li>
-          <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("map")}>マップ</li>
-          <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("guidance")}>インフォメーション</li>
+          {location.pathname === "/" && (
+            <>
+              <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("introtext")}>
+                サロンについて
+              </li>
+              <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("menu")}>
+                メニュー
+              </li>
+              <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("map")}>
+                マップ
+              </li>
+            </>
+          )}
+          <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("guidance")}>
+            インフォメーション
+          </li>
         </ul>
       </div>
 

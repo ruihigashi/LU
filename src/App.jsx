@@ -6,6 +6,7 @@ import IntroText from "./components/IntroText";
 import SliderDots from "./components/SliderDots";
 import Footer from "./components/Footer";
 import Guidance from "./components/Guidance";
+import ScrollToTop from "./components/ScrollToTop"; 
 import MenuPage from "./MenuPage"; 
 
 export default function App() {
@@ -22,6 +23,8 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
+      
       <Header />
       <Routes>
         {/* トップページ */}
