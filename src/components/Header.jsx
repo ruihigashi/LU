@@ -38,15 +38,15 @@ export default function Header() {
             onClick={() => scrollToSection("heroslider")}
           >
             <p className="text-xs text-gray-500 tracking-widest font-great">Hair Salon</p>
-            <h1 className="text-2xl font-luana tracking-widest text-[#333]">
-              LUANA <span className="mx-1">•</span> S <span className="mx-1">•</span> MIRUTO
+            <h1 className="text-2xl font-luana tracking-widest text-gray-700">
+              LUANA • S • MIRUTO
             </h1>
           </div>
 
           {/* ナビゲーション + ハンバーガー */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 te">
             <nav className="hidden md:flex space-x-6 items-center">
-              <ul className="flex space-x-4 items-center text-sm">
+              <ul className="flex space-x-4 items-center text-sm text-gray-700">
                 <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("introtext")}>サロンについて</li>
                 <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("menu")}>メニュー</li>
                 <li className="cursor-pointer hover:text-pink-500" onClick={() => scrollToSection("map")}>マップ</li>

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import HeroSlider from "./components/HeroSlider";
 import IntroText from "./components/IntroText";
 import SliderDots from "./components/SliderDots";
 import Footer from "./components/Footer";
 import Guidance from "./components/Guidance";
+import MenuPage from "./MenuPage"; 
 
 export default function App() {
   const [current, setCurrent] = useState(0);
@@ -19,32 +21,49 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-serif overflow-x-hidden">
+    <Router>
       <Header />
-      <main className="pt-16">
-        <div id="heroslider">
-          <HeroSlider
-            current={current}
-            setCurrent={setCurrent}
-            sliderRef={sliderRef}
-            scrollToSlide={scrollToSlide}
-          />
-        </div>
+      <Routes>
+        {/* トップページ */}
+        <Route
+          path="/"
+          element={
+            <main className="pt-16">
+              <div id="heroslider">
+                <HeroSlider
+                  current={current}
+                  setCurrent={setCurrent}
+                  sliderRef={sliderRef}
+                  scrollToSlide={scrollToSlide}
+                />
+              </div>
 
-        <SliderDots
-          current={current}
-          scrollToSlide={scrollToSlide}
+              <SliderDots
+                current={current}
+                scrollToSlide={scrollToSlide}
+              />
+
+              <div id="introtext">
+                <IntroText />
+              </div>
+
+              <div id="guidance">
+                <Guidance />
+              </div>
+
+              <Footer />
+            </main>
+          }
         />
 
-        <div id="introtext">
-          <IntroText />
-        </div>
-
-        <div id="guidance">
+        {/* メニューページ */}
+        <Route path="/menu" element={
+          <>
+          <MenuPage />
           <Guidance />
-        </div>
-        <Footer />
-      </main>
-    </div>
+          </>
+          } />
+      </Routes>
+    </Router>
   );
 }
