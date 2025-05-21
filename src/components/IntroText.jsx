@@ -75,7 +75,7 @@ export default function IntroText() {
             href="https://lin.ee/YTdqlsft"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full transition"
+            className="inline-block bg-green-500 hover:text-blue-300 text-white font-semibold px-6 py-3 rounded-full transition"
           >
             LINEで予約する
           </a>
@@ -106,7 +106,7 @@ export default function IntroText() {
             style={{ backgroundImage: `url(${Menu})` }}
           >
             <div className="mb-10">
-              <h4 className="text-xl font-bold  text-blue-600 border-b border-blue-300 inline-block mb-8">
+              <h4 className="text-xl font-bold  text-blue-600 border-b border-blue-300 inline-block mb-8 font-serifjp">
                 {menu.title}
               </h4>
               <div className="space-y-3 max-w-sm mx-auto">
@@ -128,7 +128,7 @@ export default function IntroText() {
           <div className="relative pl-4 py-2 px-14 font-serif text-2xl border-l-4 border-b border-gray-800">
             <Link
               to="/menu"
-              className="text-gray-800 hover:text-blue-600 font-semibold tracking-wide transition font-serif"
+              className="text-gray-800 hover:text-blue-300 font-semibold tracking-wide transition font-serif"
             >
               Menu More...
             </Link>

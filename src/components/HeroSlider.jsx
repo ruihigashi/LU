@@ -35,7 +35,7 @@ export default function HeroSlider({ current, setCurrent, sliderRef, scrollToSli
 
   {/* 左矢印 */}
   <button
-    className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/40 hover:bg-white/70 text-2xl text-gray-800 w-8 h-8 rounded-full shadow-lg backdrop-blur-sm flex items-center justify-center transition"
+    className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/20 hover:bg-white/60 text-2xl text-gray-800 w-8 h-8 rounded-full shadow-lg backdrop-blur-sm flex items-center justify-center transition"
     onClick={() => scrollToSlide((current - 1 + images.length) % images.length)}
   >
     &#10094;
@@ -43,7 +43,7 @@ export default function HeroSlider({ current, setCurrent, sliderRef, scrollToSli
 
   {/* 右矢印 */}
   <button
-    className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/40 hover:bg-white/70 text-2xl text-gray-800 w-8 h-8 rounded-full shadow-lg backdrop-blur-sm flex items-center justify-center transition"
+    className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/20 hover:bg-white/60 text-2xl text-gray-800 w-8 h-8 rounded-full shadow-lg backdrop-blur-sm flex items-center justify-center transition"
     onClick={() => scrollToSlide((current + 1) % images.length)}
   >
     &#10095;

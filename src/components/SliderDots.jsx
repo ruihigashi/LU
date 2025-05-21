@@ -7,7 +7,7 @@ export default function SliderDots({ current, scrollToSlide }) {
   const images = [slide1, slide2, slide3, slide4];
 
   return (
-    <div className="w-full flex justify-center py-4 bg-white">
+    <div className="w-full flex justify-center py-3 bg-white">
       <div className="flex space-x-3">
         {images.map((_, index) => (
           <button

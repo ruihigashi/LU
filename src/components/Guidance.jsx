@@ -35,8 +35,8 @@ export default function Guidance() {
 
                     <div className="font-semibold whitespace-nowrap">Tel.</div>
                     <div>
-                        <a href="tel:09025856220" className="underline text-white hover:text-pink-400">
-                            090-2585-6220
+                        <a href="tel:0986668248" className="underline text-white hover:text-pink-400">
+                            0986-66-8248
                         </a>
                     </div>
                     <div className="col-span-2"><hr className="my-2 border-white" /></div>
@@ -60,7 +60,7 @@ export default function Guidance() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaInstagram className="text-white text-4xl hover:text-blue-600" />
+                        <FaInstagram className="text-white text-4xl hover:text-blue-300" />
                     </a>
                 </div>
 
