@@ -10,7 +10,7 @@ export default function IntroText() {
 
   return (
     <section
-      className="py-12 text-center px-4 bg-[url('/home/rui0421/Luana/src/assets/Images/white.jpg')] bg-repeat bg-center bg-blend-overlay"
+      className="py-12 text-center px-4 bg-[url('/rui0421/Luana/src/assets/Images/white.jpg')] bg-repeat bg-center bg-blend-overlay"
     >
       <h2 className="text-3xl font-semibold mb-8 font-luana">
         LUANA <span className="mx-1">•</span> S <span className="mx-1">•</span> MIRUTO
