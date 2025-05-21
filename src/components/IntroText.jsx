@@ -42,7 +42,6 @@ export default function IntroText() {
         </div>
       </div>
 
-
       <div className="max-w-5xl mx-auto mt-8" id="menu">
         <h2 className="text-3xl mb-2 text-left font-dancing tracking-wide">
           Menu
@@ -53,58 +52,39 @@ export default function IntroText() {
         <hr className="my-5 border-t-2 border-blue-900 rounded-full" />
       </div>
 
-      <div className="max-w-3xl mx-auto my-16 p-8 bg-[url('/assets/Images/menu.jpg')] bg-cover bg-no-repeat bg-center rounded-xl shadow-2xl border border-pink-200 backdrop-blur-sm" data-aos="fade-up" data-aos-duration="1000">
-
-        {/* Set menu */}
-        <div className="mb-10">
-          <h4 className="text-xl font-bold text-pink-500 border-b border-pink-300 inline-block mb-8">Set menu</h4>
-          <div className="space-y-2 max-w-sm mx-auto">
-            <div className="flex justify-between text-lg text-gray-700">
-              <span>30分コース</span>
-              <span>10,000円</span>
-            </div>
-            <div className="flex justify-between text-lg text-gray-700">
-              <span>60分コース</span>
-              <span>18,000円</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Cut */}
-        <div className="mb-10">
-          <h4 className="text-xl font-bold text-pink-500 border-b border-pink-300 inline-block mb-8">Cut</h4>
-          <div className="space-y-2 max-w-sm mx-auto">
-            <div className="flex justify-between text-lg text-gray-700">
-              <span>30分コース</span>
-              <span>5,000円</span>
-            </div>
-            <div className="flex justify-between text-lg text-gray-700">
-              <span>60分コース</span>
-              <span>8,000円</span>
+      <div
+        className="max-w-5xl mx-auto my-16 grid grid-cols-1 md:grid-cols-3 gap-8"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        {/* 各メニューカード（Set menu, Cut, Color） */}
+        {[...Array(3)].map((_, i) => (
+          <div
+            key={i}
+            className="p-6 bg-[url('/menu.jpg')] bg-cover bg-no-repeat bg-center rounded-xl shadow-2xl border border-pink-200 backdrop-blur-sm"
+          >
+            <div className="mb-10">
+              <h4 className="text-xl font-bold text-pink-500 border-b border-pink-300 inline-block mb-8">
+                {["Set menu", "Cut", "Color"][i]}
+              </h4>
+              <div className="space-y-2 max-w-sm mx-auto">
+                <div className="flex justify-between text-lg text-gray-700">
+                  <span>30分コース</span>
+                  <span>{["10,000円", "5,000円", "5,000円"][i]}</span>
+                </div>
+                <div className="flex justify-between text-lg text-gray-700">
+                  <span>60分コース</span>
+                  <span>{["18,000円", "8,000円", "8,000円"][i]}</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Color */}
-        <div className="mb-10">
-          <h4 className="text-xl font-bold text-pink-500 border-b border-pink-300 inline-block mb-8">Color</h4>
-          <div className="space-y-2 max-w-sm mx-auto">
-            <div className="flex justify-between text-lg text-gray-700">
-              <span>30分コース</span>
-              <span>5,000円</span>
-            </div>
-            <div className="flex justify-between text-lg text-gray-700">
-              <span>60分コース</span>
-              <span>8,000円</span>
-            </div>
-          </div>
-        </div>
-
-
-        <p className="text-center text-sm text-gray-600 mt-10">
-          何か気になる点などございましたらお気軽にご相談ください。
-        </p>
+        ))}
       </div>
+
+      <p className="text-center text-sm text-gray-600 mt-10">
+        何か気になる点などございましたらお気軽にご相談ください。
+      </p>
 
       <div className="max-w-5xl mx-auto" id="map">
         <h2 className="text-3xl mb-2 text-left font-dancing tracking-wide">
