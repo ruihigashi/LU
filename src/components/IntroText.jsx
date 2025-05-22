@@ -25,9 +25,9 @@ export default function IntroText() {
       title: "Color",
       items: [
         { label: "グレーリタッチ", price: "¥2,750" },
-        { label: "グレーカラーフル（ショート）", price: "¥3,250" },
-        { label: "グレーカラーフル（ミディアム）", price: "¥3,750" },
-        { label: "グレーカラーフル（ロング）", price: "¥4,750" },
+        { label: (<><span className="text-[14px]">グレーカラーフル（ショート）</span></>), price: "¥3,250" },
+        { label: (<><span className="text-[14px]">グレーカラーフル（ミディアム）</span></>), price: "¥3,750" },
+        { label: (<><span className="text-[14px]">グレーカラーフル（ロング）</span></>), price: "¥4,750" },
         { label: "カラーリタッチ", price: "¥3,300" },
         { label: "カラーフル（ショート）", price: "¥3,800" },
         { label: "カラーフル（ミディアム）", price: "¥4,300" },
