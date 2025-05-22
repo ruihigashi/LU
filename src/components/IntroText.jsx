@@ -1,4 +1,3 @@
-import lineQR from "../assets/Images/line.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -51,20 +50,23 @@ export default function IntroText() {
       className="py-12 text-center px-4 bg-repeat bg-center bg-blend-overlay"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <h2 className="text-4xl font-semibold mb-8 font-luana text-gray-700">
-        LUANA <span className="mx-1">•</span> S <span className="mx-1">•</span> MIRUTO
+      <h2 className="text-4xl font-semibold mb-8 text-gray-700 font-dancing">
+        Concept
       </h2>
 
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic" >
-        <p className="text-lg mb-8 text-gray-700">癒しを求めるなら LUANA へ</p>
+        <p className="text-lg mb-8 text-gray-700">癒しを求めるなら LUANA・S・MIRUTO へ</p>
         <p className="text-base text-gray-700 mb-8">
-          心からリラックスして欲しいという想いで<br />
-          空間づくりにもこだわっているサロンです。
+          「LUANA」はハワイ語で 「くつろぐ」 「満足する」 などの意味を持ち、<br />
+          「MIRUTO」は「柔和な・やさしい」といった想いが込められた言葉です。
         </p>
+
         <p className="text-base text-gray-700 mb-8">
-          アンティーク調の居心地が良い店内で<br />
-          ゆっくりとした時間をお過ごしください。
+          私たちは、この店名に込めた意味の通り、お客様が心からリラックスできるような<br />
+          あたたかみのある空間づくりを大切にしています。<br />
+          初めての方でも安心してご来店いただける、アットホームな美容室を目指しています。
         </p>
+
         <p className="text-base text-gray-700 font-semibold">
           【ご予約はこちらのLINEから】
         </p>
