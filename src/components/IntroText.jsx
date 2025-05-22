@@ -25,6 +25,9 @@ export default function IntroText() {
       title: "Color",
       items: [
         { label: "グレーリタッチ", price: "¥2,750" },
+        { label: "グレーカラーフル（ショート）", price: "¥3,250" },
+        { label: "グレーカラーフル（ミディアム）", price: "¥3,750" },
+        { label: "グレーカラーフル（ロング）", price: "¥4,750" },
         { label: "カラーリタッチ", price: "¥3,300" },
         { label: "カラーフル（ショート）", price: "¥3,800" },
         { label: "カラーフル（ミディアム）", price: "¥4,300" },
@@ -34,13 +37,13 @@ export default function IntroText() {
     {
       title: "Kimono styling",
       items: [
-        { label: "着付け（成人）", price: "¥3,300" },
-        { label: "着付け（男性）", price: "¥2,750" },
-        { label: "着付け（女性）", price: "¥2,200" },
-        { label: "袴着付け（女性）", price: "¥2,750" },
-        { label: "四身（7歳）", price: "¥2,200" },
-        { label: "被布（3歳）", price: "¥2,750" },
-        { label: "袴（男の子）", price: "¥2,200" },
+        { label: "着付け（成人）", price: "¥8,800" },
+        { label: "着付け（男性）", price: "¥5,500" },
+        { label: "着付け（女性）", price: "¥6,600" },
+        { label: "袴着付け", price: "¥5,500" },
+        { label: "四身（7歳）", price: "¥8,800" },
+        { label: "被布（3歳）", price: "¥7,700" },
+        { label: "袴（男の子）", price: "¥5,500" },
       ],
     },
   ];
