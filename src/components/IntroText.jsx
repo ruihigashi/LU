@@ -57,17 +57,21 @@ export default function IntroText() {
       <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic" >
         <p className="text-lg mb-8 text-gray-700">癒しを求めるなら LUANA・S・MIRUTO へ</p>
         <p className="text-base text-gray-700 mb-8">
-          「LUANA」はハワイ語で 「くつろぐ」 「満足する」 などの意味を持ち、<br />
-          「MIRUTO」は「柔和な・やさしい」といった想いが込められた言葉です。
+          「LUANA」はハワイ語で <br />
+          「くつろぐ」 「満足する」 などの意味を持ち、<br />
+          「MIRUTO」は「柔和な・やさしい」といった<br />
+          想いが込められた言葉です。
         </p>
 
         <p className="text-base text-gray-700 mb-8">
-          私たちは、この店名に込めた意味の通り、お客様が心からリラックスできるような<br />
+          私たちは、この店名に込めた意味の通り、<br />
+          お客様が心からリラックスできるような<br />
           あたたかみのある空間づくりを大切にしています。<br />
-          初めての方でも安心してご来店いただける、アットホームな美容室を目指しています。
+          初めての方でも安心してご来店いただける、<br />
+          アットホームな美容室を目指しています。
         </p>
 
-        <p className="text-base text-gray-700 font-semibold">
+        <p className="text-base text-gray-700 font-semibold text-lg">
           【ご予約はこちらのLINEから】
         </p>
 
