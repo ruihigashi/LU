@@ -25,13 +25,13 @@ export default function IntroText() {
       title: "Color",
       items: [
         { label: "グレーリタッチ", price: "¥2,750" },
-        { label: (<><span className="text-[14px]">グレーカラーフル（ショート）</span></>), price: "¥3,250" },
-        { label: (<><span className="text-[14px]">グレーカラーフル（ミディアム）</span></>), price: "¥3,750" },
-        { label: (<><span className="text-[14px]">グレーカラーフル（ロング）</span></>), price: "¥4,750" },
+        { label: (<><span className="text-[14px]">グレーカラーフル（ショート）</span></>), price: "¥3,300" },
+        { label: (<><span className="text-[14px]">グレーカラーフル（ミディアム）</span></>), price: "¥4,400" },
+        { label: (<><span className="text-[14px]">グレーカラーフル（ロング）</span></>), price: "¥5,500" },
         { label: "カラーリタッチ", price: "¥3,300" },
-        { label: "カラーフル（ショート）", price: "¥3,800" },
-        { label: "カラーフル（ミディアム）", price: "¥4,300" },
-        { label: "カラーフル（ロング）", price: "¥5,300" },
+        { label: "カラーフル（ショート）", price: "¥3,850" },
+        { label: "カラーフル（ミディアム）", price: "¥4,950" },
+        { label: "カラーフル（ロング）", price: "¥6,050" },
       ],
     },
     {
@@ -40,10 +40,13 @@ export default function IntroText() {
         { label: "着付け（成人）", price: "¥8,800" },
         { label: "着付け（男性）", price: "¥5,500" },
         { label: "着付け（女性）", price: "¥6,600" },
-        { label: "袴着付け", price: "¥5,500" },
+        { label: "着付け（袴）", price: "¥5,500" },
         { label: "四身（7歳）", price: "¥8,800" },
+        { label: <span className='text-sm -mt-4 block'>【ヘア・セット・着付け込み】</span> },
         { label: "被布（3歳）", price: "¥7,700" },
+        { label: <span className='text-sm -mt-4 block'>【ヘア・セット・着付け込み】</span> },
         { label: "袴（男の子）", price: "¥5,500" },
+        { label: <span className='text-sm -mt-4 block'>【セット・着付け込み】</span> },
       ],
     },
   ];
@@ -120,10 +123,16 @@ export default function IntroText() {
               </h4>
               <div className="space-y-3 max-w-sm mx-auto">
                 {menu.items.map((item, idx) => (
-                  <div key={idx} className="flex justify-between font-serifjp text-gray-700">
-                    <span>{item.label}</span>
-                    <span>{item.price}</span>
-                  </div>
+                  item.price ? (
+                    <div key={idx} className="flex justify-between font-serifjp text-gray-700">
+                      <span>{item.label}</span>
+                      <span>{item.price}</span>
+                    </div>
+                  ) : (
+                    <div key={idx} className="text-left pr-4 -mt-2 text-sm text-gray-500">
+                      {item.label}
+                    </div>
+                  )
                 ))}
               </div>
             </div>
