@@ -65,12 +65,12 @@ export default function MenuSection() {
             title: "Kimono styling",
             items: [
                 { name: "着付け（成人）", price: "¥8,800", desc: "一生に一度の晴れ舞台にふさわしい、成人着付け。\n日本髪：+¥2,200\n※早朝料金（午前9時前からの方）: +¥2,200" },
-                { name: "着付け（男性）", price: "¥5,500", desc: "夏祭りや花火大会にぴったりな、浴衣着付け。\n日本髪：+¥2,200\n※早朝料金（午前9時前からの方）: +¥2,200" },
+                { name: "着付け（男性）", price: "¥5,500", desc: "夏祭りや花火大会にぴったりな、浴衣着付け。\n※早朝料金（午前9時前からの方）: +¥2,200" },
                 { name: "着付け（女性）", price: "¥6,600", desc: "帯結びまで美しく仕上げる、浴衣着付け。\n日本髪：+¥2,200\n※早朝料金（午前9時前からの方）: +¥2,200" },
                 { name: "袴着付け", price: "¥5,500", desc: "式典にぴったりな袴の着付け。\n日本髪：+¥2,200\n※早朝料金（午前9時前からの方）: +¥2,200" },
                 { name: (<><span className="inline-block ml-2">四身（7歳）</span><br />【ヘア・メイク・着付け込み】</>), price: (<><span className="inline-block mt-[24px]">¥8,800</span></>), desc: "七五三の7歳用着付け。\n日本髪：+¥2,200\n※早朝料金（午前9時前からの方）: +¥2,200" },
                 { name: (<><span className="inline-block ml-2">被衣（3歳）</span><br />【ヘア・メイク・着付け込み】</>), price: (<><span className="inline-block mt-[24px]">¥7,700</span></>), desc: "七五三の3歳用の被布着付け。\n日本髪：+¥2,200\n3才メイク：+¥1,650\n※早朝料金（午前9時前からの方）： +¥2,200" },
-                { name: (<><span className="inline-block ml-2">袴（男の子）</span><br />【セット・着付け込み】</>), price: (<><span className="inline-block mt-[24px]">¥5,500</span></>), desc: "七五三や卒園式向けの男児袴着付け。\n日本髪：+¥2,200\n※早朝料金（午前9時前からの方）: +¥2,200" },
+                { name: (<><span className="inline-block ml-2">袴（男の子）</span><br />【セット・着付け込み】</>), price: (<><span className="inline-block mt-[24px]">¥5,500</span></>), desc: "七五三や卒園式向けの男児袴着付け。\n※早朝料金（午前9時前からの方）: +¥2,200" },
             ],
         },
     ];

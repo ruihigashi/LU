@@ -8,7 +8,7 @@ import slide3 from "../assets/Images/salon3.jpg";
 
 export default function HeroSlider({ current, setCurrent, sliderRef, scrollToSlide }) {
 
-  const images = [slide, slide1, slide2, slide3];
+  const images = [slide1, slide2, slide3, slide];
 
   useEffect(() => {
     const interval = setInterval(() => {

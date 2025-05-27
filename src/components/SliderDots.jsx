@@ -4,7 +4,7 @@ import slide3 from "../assets/Images/salon3.jpg";
 import slide from "../assets/Images/salon1.jpg";
 
 export default function SliderDots({ current, scrollToSlide }) {
-  const images = [slide, slide1, slide2, slide3];
+  const images = [slide1, slide2, slide3, slide];
 
   return (
     <div className="w-full flex justify-center py-3 bg-white">
