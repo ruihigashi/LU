@@ -48,7 +48,7 @@ export default function MenuSection() {
         {
             title: "Hair Care",
             items: [
-                { name: "シャンプー＆ブロー", price: "¥1,650", desc: "洗髪後、ブローで美しく仕上げます。" },
+                { name: "シャンプー ＆ ブロー", price: "¥1,650", desc: "洗髪後、ブローで美しく仕上げます。" },
                 { name: (<><span className="text-[13px]">シャンプー ＆ ブロー ＆ トリートメント</span></>), price: "¥2,200", desc: "補修ケア＋スタイリングで美髪に。" },
             ],
         },
