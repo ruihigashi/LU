@@ -55,13 +55,13 @@ export default function Guidance() {
                     </div>
                 </div>
                 <div className="flex justify-center items-center mt-10">
-                    <a
+                    {/* <a
                         href="https://www.instagram.com/your_instagram_id"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FaInstagram className="text-white text-4xl hover:text-blue-300" />
-                    </a>
+                    </a> */}
                 </div>
 
             </div>

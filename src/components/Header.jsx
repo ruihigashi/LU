@@ -71,14 +71,14 @@ export default function Header() {
                 <FaPhone className="mr-1" />
                 0986-66-8248
               </a>
-              <a
+              {/* <a
                 href="https://www.instagram.com/your_instagram_id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black text-xl hover:text-blue-blue-300 transition"
               >
                 <FaInstagram />
-              </a>
+              </a> */}
             </nav>
 
             {/* ハンバーガー（モバイル右配置） */}
