@@ -49,16 +49,19 @@ export default function MenuSection() {
             title: "Hair Care",
             items: [
                 { name: "シャンプー＆ブロー", price: "¥1,650", desc: "洗髪後、ブローで美しく仕上げます。" },
-                { name: (<><span className="text-[13px]">シャンプー ＆ ブロー ＆ トリートメント</span></>), price: "¥2,150", desc: "補修ケア＋スタイリングで美髪に。" },
+                { name: (<><span className="text-[13px]">シャンプー ＆ ブロー ＆ トリートメント</span></>), price: "¥2,200", desc: "補修ケア＋スタイリングで美髪に。" },
             ],
         },
         {
             title: "Head spa",
             items: [
-                { name: "ヘッドスパ（20分）", price: "¥2,200", desc: "短時間でリフレッシュできる頭皮ケア。" },
-                { name: "ヘッドスパ（60分）", price: "¥5,500", desc: "頭皮をじっくりケアするリラクゼーションスパ。\n★カウンセリング 30分（初回のみ）" },
-                { name: (<><span className="text-[15px]">ヘッドスパ（20分）＆ シャンプー</span></>), price: "¥4,400", desc: "クイックスパと洗髪のセット。" },
-                { name: (<><span className="text-[15px]">ヘッドスパ（60分）＆ シャンプー</span></>), price: "¥7,700", desc: "頭皮ケア＋シャンプーで爽快仕上げ。\n★カウンセリング 30分（初回のみ）" },
+                { name: "ヘッドスパ（20分）", price: "¥2,200", desc: "シャンプー台で受ける短時間の頭皮ケア。" },
+            ],
+        },
+                {
+            title: "Relaxation",
+            items: [
+                { name: "ドライヘッドスパ（60分）", price: "¥5,500", desc: "ベッドで行うリラクゼーション。\n頭・首・耳・デコルテを丁寧にマッサージし、血流や頭痛、むくみを改善します。\n★初回のみカウンセリング30分付き" },
             ],
         },
         {
